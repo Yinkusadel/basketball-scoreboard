@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basketball Scoreboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
@@ -12,35 +12,27 @@
         <div class="home">
           <div class="home-content">
             <h2>HOME</h2>
-            <div class="scores">
-              0
+            <div class="scores" id="home-score">0</div>
+            <div class="score-counter">
+              <button type="button" id="home-btn-1">+1</button>
+              <button type="button" id="home-btn-2">+2</button>
+              <button type="button" id="home-btn-3">+3</button>
             </div>
-            <div class="score-counter" id="home-scores">
-              <button type="button">+1</button>
-              <button type="button">+2</button>
-              <button type="button">+3</button>
-            </div>
-
           </div>
-
         </div>
         <div class="guest">
           <div class="guest-content">
             <h2>GUEST</h2>
-            <div class="scores" id="guest-scores">
-              0
-            </div>
+            <div class="scores" id="guest-score">0</div>
             <div class="score-counter">
-              <button type="button">+1</button>
-              <button type="button">+2</button>
-              <button type="button">+3</button>
+              <button type="button" id="guest-btn-1">+1</button>
+              <button type="button" id="guest-btn-2">+2</button>
+              <button type="button" id="guest-btn-3">+3</button>
             </div>
-
           </div>
-
         </div>
-
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
