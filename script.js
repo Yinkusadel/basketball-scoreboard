@@ -1,6 +1,5 @@
 const homeScore = document.getElementById('home-score');
 const guestScore = document.getElementById('guest-score');
-const newGame = document.getElementById('new-game');
 let currentHomeScore = 0;
 let currentGuestScore = 0;
 
