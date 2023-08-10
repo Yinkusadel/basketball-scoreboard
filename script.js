@@ -1,5 +1,6 @@
 const homeScore = document.getElementById('home-score');
 const guestScore = document.getElementById('guest-score');
+const newGame = document.getElementById('new-game');
 let currentHomeScore = 0;
 let currentGuestScore = 0;
 
@@ -27,6 +28,11 @@ function threeGoalToGuest() {
   guestScore.textContent = `${(currentGuestScore += 3)}`;
 }
 
+function playNewGame() {
+  guestScore.textContent = `${(currentGuestScore -= currentGuestScore)}`;
+  homeScore.textContent = `${(currentHomeScore -= currentHomeScore)}`;
+}
+
 const homeOne = document.getElementById('home-btn-1');
 homeOne.onclick = oneGoalToHome;
 
@@ -44,3 +50,6 @@ guestTwo.onclick = twoGoalToGuest;
 
 const guestThree = document.getElementById('guest-btn-3');
 guestThree.onclick = threeGoalToGuest;
+
+const refreshGame = document.getElementById('new-game');
+refreshGame.onclick = playNewGame;
