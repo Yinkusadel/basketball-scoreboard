@@ -1,5 +1,5 @@
-const homeScore = document.getElementById('home-score');
-const guestScore = document.getElementById('guest-score');
+const homeScore = document.querySelector('#home-score');
+const guestScore = document.querySelector('#guest-score');
 let currentHomeScore = 0;
 let currentGuestScore = 0;
 
@@ -32,23 +32,23 @@ function playNewGame() {
   homeScore.textContent = `${(currentHomeScore -= currentHomeScore)}`;
 }
 
-const homeOne = document.getElementById('home-btn-1');
+const homeOne = document.querySelector('#home-btn-1');
 homeOne.addEventListener('click', oneGoalToHome);
 
-const homeTwo = document.getElementById('home-btn-2');
+const homeTwo = document.querySelector('#home-btn-2');
 homeTwo.addEventListener('click', twoGoalToHome);
 
-const homeThree = document.getElementById('home-btn-3');
+const homeThree = document.querySelector('#home-btn-3');
 homeThree.addEventListener('click', threeGoalToHome);
 
-const guestOne = document.getElementById('guest-btn-1');
+const guestOne = document.querySelector('#guest-btn-1');
 guestOne.addEventListener('click', oneGoalToGuest);
 
-const guestTwo = document.getElementById('guest-btn-2');
+const guestTwo = document.querySelector('#guest-btn-2');
 guestTwo.addEventListener('click', twoGoalToGuest);
 
-const guestThree = document.getElementById('guest-btn-3');
+const guestThree = document.querySelector('#guest-btn-3');
 guestThree.addEventListener('click', threeGoalToGuest);
 
-const refreshGame = document.getElementById('new-game');
+const refreshGame = document.querySelector('#new-game');
 refreshGame.addEventListener('click', playNewGame);
