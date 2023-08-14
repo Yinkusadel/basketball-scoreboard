@@ -3,34 +3,34 @@ const guestScore = document.querySelector('#guest-score');
 let currentHomeScore = 0;
 let currentGuestScore = 0;
 
-function oneGoalToHome() {
+const oneGoalToHome = () => {
   homeScore.textContent = `${(currentHomeScore += 1)}`;
-}
+};
 
-function twoGoalToHome() {
+const twoGoalToHome = () => {
   homeScore.textContent = `${(currentHomeScore += 2)}`;
-}
+};
 
-function threeGoalToHome() {
+const threeGoalToHome = () => {
   homeScore.textContent = `${(currentHomeScore += 3)}`;
-}
+};
 
-function oneGoalToGuest() {
+const oneGoalToGuest = () => {
   guestScore.textContent = `${(currentGuestScore += 1)}`;
-}
+};
 
-function twoGoalToGuest() {
+const twoGoalToGuest = () => {
   guestScore.textContent = `${(currentGuestScore += 2)}`;
-}
+};
 
-function threeGoalToGuest() {
+const threeGoalToGuest = () => {
   guestScore.textContent = `${(currentGuestScore += 3)}`;
-}
+};
 
-function playNewGame() {
+const playNewGame = () => {
   guestScore.textContent = `${(currentGuestScore -= currentGuestScore)}`;
   homeScore.textContent = `${(currentHomeScore -= currentHomeScore)}`;
-}
+};
 
 const homeOne = document.querySelector('#home-btn-1');
 homeOne.addEventListener('click', oneGoalToHome);
