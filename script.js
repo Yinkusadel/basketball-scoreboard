@@ -32,30 +32,23 @@ function playNewGame() {
   homeScore.textContent = `${(currentHomeScore -= currentHomeScore)}`;
 }
 
-document.addEventListener('click', function homeOne() {
-  document.getElementById('home-btn-1').onclick = oneGoalToHome;
-});
+const homeOne = document.getElementById('home-btn-1');
+homeOne.addEventListener('click', oneGoalToHome);
 
-document.addEventListener('click', function homeTwo() {
-  document.getElementById('home-btn-2').onclick = twoGoalToHome;
-});
+const homeTwo = document.getElementById('home-btn-2');
+homeTwo.addEventListener('click', twoGoalToHome);
 
-document.addEventListener('click', function homeThree() {
-  document.getElementById('home-btn-3').onclick = threeGoalToHome;
-});
+const homeThree = document.getElementById('home-btn-3');
+homeThree.addEventListener('click', threeGoalToHome);
 
-document.addEventListener('click', function guestOne() {
-  document.getElementById('guest-btn-1').onclick = oneGoalToGuest;
-});
+const guestOne = document.getElementById('guest-btn-1');
+guestOne.addEventListener('click', oneGoalToGuest);
 
-document.addEventListener('click', function guestTwo() {
-  document.getElementById('guest-btn-2').onclick = twoGoalToGuest;
-});
+const guestTwo = document.getElementById('guest-btn-2');
+guestTwo.addEventListener('click', twoGoalToGuest);
 
-document.addEventListener('click', function guestThree() {
-  document.getElementById('guest-btn-3').onclick = threeGoalToGuest;
-});
+const guestThree = document.getElementById('guest-btn-3');
+guestThree.addEventListener('click', threeGoalToGuest);
 
-document.addEventListener('click', function refreshGame() {
-  document.getElementById('new-game').onclick = playNewGame;
-});
+const refreshGame = document.getElementById('new-game');
+refreshGame.addEventListener('click', playNewGame);
