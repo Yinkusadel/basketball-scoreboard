@@ -3,7 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Basketball Scoreboard</title>
+    <link href="styles.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="board">
+        <div class="home-away">
+          <div class="home">
+            <div class="home-content">
+              <h2>HOME</h2>
+              <div class="scores" id="home-score">0</div>
+              <div class="score-counter">
+                <button id="home-btn-1" type="button">+1</button>
+                <button id="home-btn-2" type="button">+2</button>
+                <button id="home-btn-3" type="button">+3</button>
+              </div>
+            </div>
+          </div>
+          <div class="guest">
+            <div class="guest-content">
+              <h2>GUEST</h2>
+              <div class="scores" id="guest-score">0</div>
+              <div class="score-counter">
+                <button id="guest-btn-1" type="button">+1</button>
+                <button id="guest-btn-2" type="button">+2</button>
+                <button id="guest-btn-3" type="button">+3</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-btn">
+          <button class="new-game" id="new-game" type="button">NEW GAME</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
